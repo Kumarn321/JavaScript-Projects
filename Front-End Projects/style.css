@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a28089;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Section Styles */
+.signup {
+    list-style: none;
+    display: flex;
+}
+
+.signup li {
+    margin-left: 20px;
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+/* Product Page Styles */
+.product-page {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-gallery {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    border-color: #000;
+}
+
+.product-options {
+    margin-top: 20px;
+}
+
+.product-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-options select {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#addToCartButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#addToCartButton:hover {
+    background-color: #218838;
+}
+
+.product-reviews {
+    margin-top: 30px;
+}
+
+.product-reviews h2 {
+    margin-bottom: 10px;
+}
+
+.review {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

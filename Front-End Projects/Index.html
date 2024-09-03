@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MyShop</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <div class="signup">
+            <li><a href="Login">Login</a></li>
+            <li><a href="Cart">Cart (<span id="cartCount">0</span>)</a></li>
+        </div>
+    </nav>
+
+    <div class="product-page">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="images/product1.jpeg" id="mainProductImage" alt="Product Image">
+            </div>
+            <div class="thumbnail-gallery">
+                <img src="images/product1.jpeg" class="thumbnail" alt="Thumbnail">
+                <img src="images/product2.jpeg" class="thumbnail" alt="Thumbnail">
+                <img src="images/product3.jpeg" class="thumbnail" alt="Thumbnail">
+                <img src="images/product4.webp" class="thumbnail" alt="Thumbnail">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p class="product-description">This is a detailed description of the product, highlighting its features and benefits.</p>
+            
+            <div class="product-options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="red" data-price="100">$100 - Red</option>
+                    <option value="blue" data-price="120">$120 - Blue</option>
+                    <option value="green" data-price="150">$150 - Green</option>
+                </select>
+            </div>
+
+            <p class="product-price">$<span id="price">100</span></p>
+
+            <button id="addToCartButton">Add to Cart</button>
+
+            <div class="product-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p><strong>John Doe:</strong> Great product! Highly recommend.</p>
+                </div>
+                <div class="review">
+                    <p><strong>Jane Smith:</strong> Good value for the price.</p>
+                </div>
+                <!-- More reviews -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
